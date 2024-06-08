@@ -7,15 +7,13 @@ body {
 }
 
 #container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
 }
 
 #button-div {
   margin: 10px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: relative;
-  right: 0;
-  top: 0;
 }
