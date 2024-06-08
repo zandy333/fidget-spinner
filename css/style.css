@@ -13,9 +13,9 @@ body {
 
 #button-div {
   margin: 10px;
-  width: auto;
+  width: 100vw;
   height: auto;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
 }
