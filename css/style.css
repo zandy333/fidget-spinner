@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#button-div {
+  margin: 10px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
