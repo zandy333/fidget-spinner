@@ -63,7 +63,7 @@ let mouseConstraint = MouseConstraint.create(engine, {
     constraint: {
          // allow bodies on mousedrag to rotate
          stiffness: 0.001,
-         angularStiffness: 0.0005,
+         angularStiffness: 0.09,
          render: {
              visible: false //false
          }
@@ -87,19 +87,6 @@ render.mouse = mouse;
 
 Engine.run(engine);
 Render.run(render);	
-
-function rotateSpinner() {
-    // apply a force when the button is pressed
-    Body.applyForce( spinner, { x: spinner.position.x, y: spinner.position.y + 100 }, {x: -100.0, y: 0});
-}
-
-function stopSpinner() {
-    // stop the spinner
-    Body.setAngularVelocity(spinner, 0)
-}
-
-document.getElementById("btn-rotate").addEventListener ("click", rotateSpinner, false);
-document.getElementById("btn-stop").addEventListener ("mousedown", stopSpinner, false);
 
 /*
 function handleResize() {
