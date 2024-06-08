@@ -62,7 +62,7 @@ let mouseConstraint = MouseConstraint.create(engine, {
     element: stage,
     constraint: {
          // allow bodies on mousedrag to rotate
-         stiffness: 0.001,
+         stiffness: 0.002,
          angularStiffness: 0.09,
          render: {
              visible: false //false
